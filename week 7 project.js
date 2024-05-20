@@ -6,12 +6,12 @@ let firstElement = ages[0];
 let lastElement = ages[ages.length - 1];
 console.log(`Subtraction of last element from first: ${lastElement - firstElement}`);
 
-// Add a new age to the array and repeat the subtraction step
+// Add a new age to the array
 ages.push(45); // Adding a new age
 lastElement = ages[ages.length - 1];
 console.log(`After adding new age, subtraction of last element from first: ${lastElement - firstElement}`);
 
-// Calculate the average age using a loop
+// Calculate age using a loop
 let totalAge = 0;
 for (let age of ages) {
     totalAge += age;
@@ -104,7 +104,7 @@ const willBuyDrink = (isHotOutside, moneyInPocket) => {
 };
 console.log(`Will buy drink: ${willBuyDrink(true, 11.00)}`);
 
-// Custom function: Check if Chick-fil-A is closed
+// Check if Chick-fil-A is closed
 const isChickFilAClosed = () => {
     const now = new Date();
     const day = now.getDay(); // 0: Sunday, 1: Monday, ..., 6: Saturday
